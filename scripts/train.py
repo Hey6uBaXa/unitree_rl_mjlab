@@ -59,6 +59,7 @@ def run_train(task_id: str, cfg: TrainConfig, log_dir: Path) -> None:
 
     cfg.agent.seed = seed
     cfg.env.seed = seed
+    cfg.env.max_iterations = 355
 
     print(f"[INFO] Training with: device={device}, seed={seed}, rank={rank}")
 

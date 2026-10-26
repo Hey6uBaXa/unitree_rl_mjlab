@@ -21,6 +21,7 @@ include_directories(
   ${ONNXRUNTIME_DIR}/include
   ${PROJECT_SOURCE_DIR}/../../include/
   ${PROJECT_SOURCE_DIR}/../../thirdparty/cnpy
+  /home/asolovyev/unitree_sdk2/include
 )
 
 file(GLOB CNPY_SRC ${PROJECT_SOURCE_DIR}/../../thirdparty/cnpy/*.cpp)

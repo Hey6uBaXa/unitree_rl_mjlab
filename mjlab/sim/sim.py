@@ -95,7 +95,7 @@ class SimulationCfg:
   Constraint arrays are batched by world: no world may have more than njmax
   constraints. If None, a heuristic value is used."""
   ls_parallel: bool = True  # Boosts perf quite noticeably.
-  contact_sensor_maxmatch: int = 64
+  contact_sensor_maxmatch: int = 1000#64
   mujoco: MujocoCfg = field(default_factory=MujocoCfg)
   nan_guard: NanGuardCfg = field(default_factory=NanGuardCfg)
 

@@ -1,0 +1,16 @@
+python scripts/train.py Mjlab-Tracking-Flat-Unitree-G1 
+--motion_file=mjlab/motions/g1/dance1_subject33.npz --env.scene.num-envs=14000
+
+python scripts/play.py Mjlab-Tracking-Flat-Unitree-G1 
+--motion_file=mjlab/motions/g1/dance1_subject33.npz 
+--checkpoint_file=logs/rsl_rl/g1_tracking/2026-03-05_14-03-14/model_50000.pt 
+
+python scripts/play.py Mjlab-Tracking-Flat-Unitree-G1 
+--motion_file=mjlab/motions/g1/fightAndSports1_subject2.npz --checkpoint_file=logs/rsl_rl/g1_tracking/2026-03-02_12-46-46/model_10000.pt 
+
+python scripts/train.py Mjlab-Velocity-Flat-Unitree-G1 
+--env.scene.num-envs=12000
+
+python scripts/play.py Mjlab-Velocity-Flat-Unitree-G1 
+--checkpoint_file=logs/rsl_rl/g1_velocity/2026-03-16_08-02-03/model_97500.pt
+

@@ -338,8 +338,8 @@ def make_velocity_env_cfg() -> ManagerBasedRlEnvCfg:
       azimuth=90.0,
     ),
     sim=SimulationCfg(
-      nconmax=35,
-      njmax=300,
+      nconmax=49,#35,
+      njmax=1444,#300,
       mujoco=MujocoCfg(
         timestep=0.005,
         iterations=10,
